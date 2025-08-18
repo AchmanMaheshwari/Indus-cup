@@ -1,0 +1,143 @@
+/* ------------------------------
+   Global Theme for Indus Cup 2K25
+   ------------------------------ */
+
+/* Import sporty fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --primary-dark: #1f2a55;   /* Navy Blue */
+  --primary-red: #d32f2f;    /* Sporty Red */
+  --primary-orange: #ff6f00; /* Energetic Orange */
+  --primary-yellow: #ffca28; /* Bright Yellow */
+  --text-light: #ffffff;     /* White */
+  --text-dark: #1a1a1a;      /* Dark Grey */
+  --bg-light: #f9f9f9;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary-dark) 40%, var(--primary-orange) 100%);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: var(--primary-dark);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-light);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-yellow);
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-orange);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-orange));
+  border-radius: 0 0 40px 40px;
+  color: var(--text-light);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Cards (Sports) */
+.card {
+  background: var(--text-light);
+  color: var(--text-dark);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  color: var(--primary-red);
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-light);
+  background: var(--primary-orange);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-red);
+  transform: scale(1.05);
+}
+
+/* QR Section */
+.qr-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--primary-dark);
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 600px;
+  color: var(--text-light);
+}
+
+.qr-section img {
+  margin-top: 1rem;
+  max-width: 200px;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background: var(--primary-dark);
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
