@@ -20,11 +20,11 @@ APP_TITLE = "Indus Cup API"
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "Tiger",          # <-- change to your MySQL password
+    "password": "Password",          # <-- change to your MySQL password
     "database": "indus_cup",
 }
 SECRET_KEY = "ChangeThisSecretKey!"  # <-- change in production
-ALGORITHM = "HS256"
+ALGORITHM = "algo"
 ACCESS_TOKEN_EXPIRE_MINUTES = 600
 
 TEAM_SPORTS = {
